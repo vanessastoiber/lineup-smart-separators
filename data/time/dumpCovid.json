@@ -1,0 +1,92 @@
+{
+  "$schema": "https://lineup.js.org/develop/schema.4.0.0.json",
+  "uid": 12,
+  "selection": [],
+  "aggregations": {
+    "rank0@Default": 10
+  },
+  "rankings": [
+    {
+      "columns": [
+        {
+          "id": "col0",
+          "desc": {
+            "type": "aggregate",
+            "label": "Aggregate Groups",
+            "fixed": true,
+            "width": 40
+          },
+          "width": 40
+        },
+        {
+          "id": "col1",
+          "desc": {
+            "type": "rank",
+            "label": "Rank",
+            "width": 50
+          },
+          "width": 50
+        },
+        {
+          "id": "col2",
+          "desc": {
+            "type": "selection",
+            "label": "Selection Checkboxes",
+            "fixed": true,
+            "width": 20
+          },
+          "width": 20,
+          "loaded": true
+        },
+        {
+          "id": "col3",
+          "desc": "string@Country/Region",
+          "width": 150,
+          "loaded": true,
+          "filter": null,
+          "groupCriteria": {
+            "type": "startsWith",
+            "values": []
+          }
+        },
+        {
+          "id": "col4",
+          "desc": "number@Deaths",
+          "width": 150,
+          "loaded": true,
+          "filter": null,
+          "groupCriteria": {
+            "type": "startsWith",
+            "values": []
+          }
+        },
+        {
+          "id": "col4",
+          "desc": "number@Confirmed",
+          "width": 150,
+          "loaded": true,
+          "filter": null,
+          "groupCriteria": {
+            "type": "startsWith",
+            "values": []
+          }
+        },
+        {
+          "id": "col5",
+          "desc": "date@Date",
+          "width": 150,
+          "loaded": true,
+          "filter": null,
+          "groupCriteria": {
+            "type": "startsWith",
+            "values": []
+          }
+        }
+      ],
+      "sortCriteria": [],
+      "groupSortCriteria": [],
+      "groupColumns": []
+    }
+  ],
+  "showTopN": 10
+}

@@ -1,0 +1,89 @@
+.lu {
+  clear: both;
+  top: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  display: flex;
+}
+#lineup1 {
+  position: relative;
+  width: 50%;
+  max-width: 50%;
+  height: 100vh;
+  padding-left: 10px;
+  float: left;
+  overflow: hidden;
+}
+
+#lineup2 {
+  position: relative;
+  width: 40%;
+  height: 100vh;
+  padding-left: 5px;
+  float: right;
+  overflow: hidden;
+}
+
+#mapping {
+  position: relative;
+  width: auto;
+  min-width: 200px;
+  margin: 0 0;
+  overflow: hidden;
+}
+
+#mapping-body {
+  padding-top: 50px;
+}
+
+.axis--grid .domain {
+  fill: #ddd;
+  stroke: none;
+}
+
+.axis--y .domain,
+.axis--grid .tick line {
+  stroke: #fff;
+}
+
+.axis--grid .tick--minor line {
+  stroke-opacity: 0.5;
+}
+
+#mapping-body > svg > g:nth-child(2) > path[location="right"] {
+  fill: #635f5d;
+  opacity: 0.2;
+}
+
+#mapping-body
+  > svg
+  > g:nth-child(2)
+  > path[location="right"][class="lu-slope lu-selected"] {
+  fill: #ffa500;
+  opacity: 0.5;
+}
+
+html > div:nth-child(3) {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+#mapping-body > svg > g:nth-child(1) > path {
+  stroke-width: 2px;
+}
+
+#mapping-body > svg {
+  color: #635f5d;
+}

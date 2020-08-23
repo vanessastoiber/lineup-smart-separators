@@ -1,0 +1,20 @@
+.lu {
+  clear: both;
+  top: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  display: flex;
+}
+#lineup1 {
+  position: relative;
+  width: 70%;
+  max-width: 80%;
+  height: 100vh;
+  padding-left: 10px;
+  float: left;
+  overflow: hidden;
+}

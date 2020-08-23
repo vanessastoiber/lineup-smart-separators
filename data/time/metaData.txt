@@ -1,0 +1,2 @@
+Source: https://www.kaggle.com/imdevskp/corona-virus-report?select=covid_19_clean_complete.csv
+Retrieved: 14.07.2020
