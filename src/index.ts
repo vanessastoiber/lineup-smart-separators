@@ -2,7 +2,7 @@ import * as LineUpJS from "lineupjs";
 import "lineupjs/build/LineUpJS.css";
 import { parse, ParseResult } from "papaparse";
 
-import "../main.css";
+import "./scss/main.css";
 import { cloneData, deriveDataset } from "./MappingResolver";
 import * as exportDumpA from "../data/time/dumpCovid.json";
 import * as exportDumpB from "../data/time/dumpUnemployment.json";

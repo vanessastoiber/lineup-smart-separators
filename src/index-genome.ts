@@ -2,7 +2,7 @@ import * as LineUpJS from "lineupjs";
 import "lineupjs/build/LineUpJS.css";
 import { parse, ParseResult } from "papaparse";
 
-import "../main-genome.css";
+import "./scss/main-genome.css";
 import { MappingResolver } from "./MappingResolver";
 import * as exportDumpA from "../data/genes-proteins/dumpgenes.json";
 import * as exportDumpB from "../data/genes-proteins/dumpproteins.json";

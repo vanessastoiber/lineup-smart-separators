@@ -73,17 +73,12 @@ export class MappingResolver {
   //     const prot = sub[1];
   //     const geneRows = (instanceA as any).data._dataRows;
   //     const protRows = (instanceB as any).data._dataRows;
-  //     console.log("testLookupItems", sub);
   //     geneRows.forEach((datarow: any) => {
   //       if (Object.values(datarow["v"])[0].toString() === gene.toString()) {
-  //         console.log("PART1gene", gene);
-  //         console.log("PART1row", Object.values(datarow["v"])[0]);
   //         sub[0] = datarow["i"];
   //       }
   //     });
   //     protRows.forEach((datarow: any) => {
-  //       console.log("PART2gene", prot);
-  //       console.log("PART2row", Object.values(datarow["v"])[0]);
   //       if (Object.values(datarow["v"])[0].toString() === prot.toString()) {
   //         sub[1] = datarow["i"];
   //       }
@@ -121,7 +116,6 @@ export class MappingResolver {
             );
           }
         });
-        // console.log("return matches", matchingIndices);
         return matchingIndices;
       } else if (this.countOccurences(selection, reverse) > 1) {
         // n:m cases
@@ -131,11 +125,9 @@ export class MappingResolver {
             matchingIndices.push(elem[ret]);
           }
         });
-        // console.log("return matches", matchingIndices);
         return matchingIndices;
       } else {
         // single selection
-        // console.log("return matches", mappingData.find(x => x[i] === selection[0])![ret]);
         return this.mappingData.find((x) => x[i] === selection[0])![ret];
       }
     } else {
@@ -230,7 +222,6 @@ export function deriveDataset(data: Object[], granularity: IDateGranularity) {
       return item;
     });
     if (!cumulativeObjectLookup.has(value)) {
-      // console.log("resultOfMapping check", value, newKey);
       cumulativeObjectLookup.set(value, newKey);
     }
   });

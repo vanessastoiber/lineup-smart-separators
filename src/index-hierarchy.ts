@@ -1,7 +1,7 @@
 import * as LineUpJS from "lineupjs";
 import "lineupjs/build/LineUpJS.css";
 
-import "../main-hierarchy.css";
+import "./scss/main-hierarchy.css";
 import HierarchyLevelCellRenderer from "./TimeColumn/HierarchyLevelCellRenderer";
 
 // For hierarchical columns
